@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'electrohack-product'
+import { Product } from 'electrohack-product'
 import 'electrohack-product/dist/index.css'
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+const App = ({product, addToCart}) => {
+  return <Product product={product} addToCart={addToCart}/>
 }
 
 export default App
